@@ -28,40 +28,40 @@ jobs:
        with:
           context: ./api-gateway
           push: true
-          tags: affanwajid123/api-gateway
+          tags: affanwajid/api-gateway
           
      - name: Build docker image of customer-services and push it into repo
        uses: docker/build-push-action@v5
        with:
           context: ./customer-services
           push: true
-          tags: affanwajid123/customer-services
+          tags: affanwajid/customer-services
           
      - name: Build docker image of inventory-services and push it into repo
        uses: docker/build-push-action@v5
        with:
           context: ./inventory-services
           push: true
-          tags: affanwajid123/inventory-services 
+          tags: affanwajid/inventory-services 
           
      - name: Build docker image of menu-services and push it into repo
        uses: docker/build-push-action@v5
        with:
           context: ./menu-services
           push: true
-          tags: affanwajid123/menu-services
+          tags: affanwajid/menu-services
           
      - name: Build docker image of order-services and push it into repo
        uses: docker/build-push-action@v5
        with:
           context: ./order-services
           push: true
-          tags: affanwajid123/order-services
+          tags: affanwajid/order-services
           
      - name: Build docker image of payment-services and push it into repo
        uses: docker/build-push-action@v5
        with:
           context: ./payment-services
           push: true
-          tags: affanwajid123/payment-services
+          tags: affanwajid/payment-services
 
